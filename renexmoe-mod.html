@@ -11,7 +11,7 @@
 </title>
 <meta name="description" content="A Onemanager-PHP site with Theme-renexmoe" />
 <meta name="theme-color" content="#fff" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jssycszyj/renexmoe-cdn@v21042003/css/app.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jssycszyj/renexmoe-cdn@v21042004/css/app.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/fira-code@4.2.2/400.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/noto-sans-sc@12.0.0/noto_sans_sc_regular/css.min.css">
@@ -74,9 +74,6 @@
     <!--PathArrayName--></a>
   <!--PathArrayEnd-->
   <div class="mdui-toolbar-spacer"></div>
-  <!--AdminStart--><a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple mdui-hidden-sm-up refresh"><i
-      class="mdui-icon material-icons">refresh</i></a>
-  <!--AdminEnd-->
 </div>
 </header>
   <div class="mdui-drawer" id="main-drawer">
@@ -86,21 +83,6 @@
   <a class="mdui-list-item-icon mdui-icon material-icons">account_circle</a><a class="mdui-list-item-content">登录</a>
 </li>
 <!--LoginEnd-->
-<!--AdminStart-->
-<li class="mdui-list-item mdui-ripple" href="?setup">
-  <a class="mdui-list-item-icon mdui-icon material-icons" href="?setup">account_circle</a><a
-    class="mdui-list-item-content" href="?setup">管理</a>
-</li>
-<li class="mdui-list-item mdui-ripple" onclick='document.cookie="";window.location.reload();' id="logout">
-  <i class="mdui-icon material-icons mdui-list-item-icon">exit_to_app</i>
-  <div class="mdui-list-item-content">退出登陆</div>
-</li>
-<li class="mdui-list-item mdui-ripple" id="checkupdate">
-  <i class="mdui-icon material-icons mdui-list-item-icon">update</i>
-  <div class="mdui-list-item-content">检查主题更新</div>
-</li>
-<div class="mdui-divider"></div>
-<!--AdminEnd-->
     <li class="mdui-list-item mdui-ripple" href="javascript:void(0);" onclick="renexmoe.toggle_theme();">
       <a class="mdui-list-item-icon mdui-icon material-icons">brightness_4</a><a class="mdui-list-item-content">深色模式</a>
     </li>
@@ -121,13 +103,13 @@
 <!--MultiDisksEnd-->
 <div class="mdui-divider"></div>
 <!--MultiDiskAreaEnd-->
-    <a href="https://github.com/qkqpttgf/OneManager-php" class="mdui-list-item mdui-ripple"><i
+    <a target="_blank" href="https://github.com/qkqpttgf/OneManager-php" class="mdui-list-item mdui-ripple"><i
         class="mdui-list-item-icon mdui-icon material-icons">code</i>
       <div class="mdui-list-item-content">Github</div>
     </a>
     <li class="mdui-list-item mdui-ripple" href="javascript:void(0);" id="about_theme">
       <i class="mdui-list-item-icon mdui-icon material-icons">info</i>
-      <div class="mdui-list-item-content">关于该主题</div>
+      <div class="mdui-list-item-content">关于主题</div>
     </li>
   </div>
 </div>
@@ -137,12 +119,6 @@
     <a href="javascript:;" class="mdui-ripple back"><i
         class="mdui-menu-item-icon mdui-icon material-icons">arrow_back</i>返回上一页</a>
   </li>
-  <!--AdminStart-->
-  <li class="mdui-menu-item">
-    <a href="javascript:;" class="mdui-ripple refresh"><i
-        class="mdui-menu-item-icon mdui-icon material-icons">refresh</i>刷新缓存</a>
-  </li>
-  <!--AdminEnd-->
 </ul>
 <i id="mouseplace" style="position: absolute"></i>
 
@@ -415,14 +391,14 @@
   style="width: 100%" frameborder="0"></iframe>
 <script>
   window.onload = function () {
-    if (document.getElementById("office-a") != null) {
+    if (document.getElementById("office-a")) {
       var ifm = document.getElementById("office-a");
       var containerHeight = document.documentElement.clientHeight - 150;
       ifm.height = containerHeight;
     }
   }
   window.onresize = function () {
-    if (document.getElementById("office-a") != null) {
+    if (document.getElementById("office-a")) {
       var ifm = document.getElementById("office-a");
       var containerHeight = document.documentElement.clientHeight - 150;
       ifm.height = containerHeight;
@@ -474,7 +450,7 @@
         });
     }
     window.onload = function () {
-        if (document.getElementById("pdf-d") != null) {
+        if (document.getElementById("pdf-d")) {
             loadpdf();
         }
     }
@@ -521,9 +497,9 @@
 <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sha-1@1.0.0/dist/sha1.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/jssycszyj/renexmoe-cdn@v21042003/js/app@1b381f3c.0fed9b95944ebd1f9d14.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/jssycszyj/renexmoe-cdn@v21042003/js/app@493df0b3.cf2b14b18180dbf73fd8.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/jssycszyj/renexmoe-cdn@v21042003/js/webpack-runtime.f563ba1f9a4a0a310500.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/jssycszyj/renexmoe-cdn@v21042004/js/app@1b381f3c.e97cc2d3068a6fbd4e83.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/jssycszyj/renexmoe-cdn@v21042004/js/app@493df0b3.930b7384370c541dd4ba.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/jssycszyj/renexmoe-cdn@v21042004/js/webpack-runtime.f563ba1f9a4a0a310500.js"></script>
 
 
 </html>
