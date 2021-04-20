@@ -1,4 +1,5 @@
 # renexmoe-cdn  
+项目地址：[renexmoe-mod](https://github.com/jssycszyj/renexmoe-cdn)  
 DEMO：[DEMO](https://demo-od.plus.workers.dev)  
 修改来自：[@186526](https://github.com/186526/onemanager-theme-renexmoe)  
 1.修复排序  
