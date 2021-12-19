@@ -381,17 +381,17 @@
             document.getElementById("noview").style.display = "";
           }
           document.getElementById("openpot").href = "potplayer://" + window.location.protocol + "//" + window.location
-            .host + "<!--FileDownUrl-->";
+            .host + window.location.pathname;
           document.getElementById("openvlc").href = "vlc://" + window.location.protocol + "//" + window.location
-            .host + "<!--FileDownUrl-->";
+            .host + window.location.pathname;
           document.getElementById("openmxpro").href = "intent:" + window.location.protocol + "//" + window.location
-            .host + "<!--FileDownUrl-->" +
+            .host + window.location.pathname +
             "#Intent;package=com.mxtech.videoplayer.pro;end";
           document.getElementById("openmxfree").href = "intent:" + window.location.protocol + "//" + window.location
-            .host + "<!--FileDownUrl-->" +
+            .host + window.location.pathname +
             "#Intent;package=com.mxtech.videoplayer.ad;end";
           document.getElementById("opennp").href = "nplayer-" + window.location.protocol + "//" + window.location
-            .host + "<!--FileDownUrl-->";
+            .host + window.location.pathname;
           document.getElementById("video-d").style.display = "";
         }
 
