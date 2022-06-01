@@ -1,2 +1,2 @@
 # renexmoe-fixversion
-## 请转到 https://GitHub.com/ariespan-open/renexmoe-fixversion
+## 请转到 https://GitHub.com/ariespan-open/renexmoe-mod-fixversion
